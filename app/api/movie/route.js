@@ -18,7 +18,6 @@ export async function GET(request) {
       },
     );
     const movieData = await movieRes.json();
-    console.log(movieData);
 
     const movie = movieData.movie_results?.[0];
 
@@ -28,8 +27,6 @@ export async function GET(request) {
         { status: 404 },
       );
     }
-
-    console.log("TMDB movie ID is:", movie.id);
 
     const detailRes = await fetch(
       `https://api.themoviedb.org/3/movie/${movie.id}?append_to_response=credits`,
