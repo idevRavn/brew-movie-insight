@@ -123,16 +123,16 @@ export default function Home() {
             tt30476518
           </button>
           <button
-            onClick={() => setImdbId("tt1375666")}
+            onClick={() => setImdbId("tt2798920")}
             className="text-orange-400 hover:text-orange-300 text-sm underline underline-offset-2"
           >
-            tt1375666
+            tt2798920
           </button>
           <button
-            onClick={() => setImdbId("tt0468569")}
+            onClick={() => setImdbId("tt1213644")}
             className="text-orange-400 hover:text-orange-300 text-sm underline underline-offset-2"
           >
-            tt0468569
+            tt1213644
           </button>
         </div>
       </div>
@@ -144,7 +144,15 @@ export default function Home() {
 
       {/* Results */}
       <div className="max-w-4xl mx-auto px-4 mt-16 mb-16">
-        {isLoading && <p className="text-center text-white/50">Analyzing...</p>}
+        {isLoading && (
+          <div className="flex flex-col items-center gap-4 py-20">
+            <div
+              className="w-10 h-10 border-2 border-orange-500 border-t-transparent 
+                    rounded-full animate-spin"
+            />
+            <p className="text-white/50">Analyzing movie...</p>
+          </div>
+        )}
 
         {movie && (
           <div className="flex gap-8">
