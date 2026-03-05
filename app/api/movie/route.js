@@ -37,7 +37,7 @@ export async function GET(request) {
       },
     );
     const movDetail = await detailRes.json();
-
+    console.log("Fetched movie details:", movDetail);
     return NextResponse.json({
       title: movDetail.title,
       poster: movDetail.poster_path
