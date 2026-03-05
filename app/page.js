@@ -98,6 +98,7 @@ export default function Home() {
             type="text"
             value={imdbId}
             onChange={(e) => setImdbId(e.target.value)}
+            onKeyDown={(e) => e.key === "Enter" && handleSearch()}
             placeholder="Enter IMDb ID (e.g. tt0133093)"
             className="flex-1 px-5 py-4 rounded-xl bg-white/10 border border-white/20 
                        text-white placeholder-white/30 focus:outline-none 
