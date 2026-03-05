@@ -6,7 +6,9 @@ AI-powered movie detail and sentiment analysis
 
 [Brew Movie Insight](https://brew-movie-insight.vercel.app/)
 
----
+## Website Preview
+
+![Brew Movie Insight Preview](/preview/web_preview.png)
 
 ## What it does
 
@@ -17,8 +19,6 @@ Enter any IMDb movie ID and get:
 - Sentiment classification — positive / mixed / negative
 - Visual audience score
 
----
-
 ## Tech Stack
 
 - **Next.js** — Frontend and backend
@@ -26,8 +26,6 @@ Enter any IMDb movie ID and get:
 - **TMDB API** — Movie data
 - **Groq API** — AI sentiment analysis
 - **Vercel** — Deployment
-
----
 
 ## Setup
 
@@ -42,7 +40,7 @@ npm install
 2. Create `.env.local` in the root:
 
 ```
-OMDB_API_KEY=your_omdb_key
+TMDB_API_KEY=your_omdb_key
 GROQ_API_KEY=your_groq_key
 ```
 
@@ -52,8 +50,4 @@ GROQ_API_KEY=your_groq_key
 npm run dev
 ```
 
----
-
-## Author
-
-**Sanu Kumar** — [github.com/idevRavn](https://github.com/idevRavn)
+Open **http://localhost:3000** in your browser to view the site.
